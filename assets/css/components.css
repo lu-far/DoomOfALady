@@ -221,6 +221,10 @@
   min-height: 280px;
 }
 
+.mirror-y {
+  transform: scaleX(-1);
+}
+
 .profile-caption {
   color: var(--muted-text);
   margin-top: 0.5rem;
