@@ -310,6 +310,23 @@
   box-shadow: var(--shadow);
 }
 
+.publication-main {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-right: 8.5rem;
+}
+
+.publication-thumb {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
 .publication-link {
   color: var(--accent);
   text-decoration: none;
@@ -393,6 +410,10 @@
     margin-top: 0.6rem;
     opacity: 1;
     pointer-events: auto;
+  }
+
+  .publication-main {
+    padding-right: 0;
   }
 
   .brand {
