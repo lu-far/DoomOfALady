@@ -1,0 +1,25 @@
+:root {
+  --font-serif: Georgia, "Times New Roman", serif;
+
+  --bg: #ffffff;
+  --surface: #f6f8f5;
+  --text: #111111;
+  --muted-text: #4d4d4d;
+  --header-bg: #9caf88;
+  --header-text: #111111;
+  --accent: #4f6b44;
+  --border: #d6dfcf;
+  --shadow: 0 10px 26px rgba(35, 58, 35, 0.09);
+}
+
+[data-theme="dark"] {
+  --bg: #121615;
+  --surface: #1a221f;
+  --text: #e9eee9;
+  --muted-text: #b5c1b8;
+  --header-bg: #4f6b44;
+  --header-text: #f5faf6;
+  --accent: #b9d2a8;
+  --border: #2d3a33;
+  --shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
