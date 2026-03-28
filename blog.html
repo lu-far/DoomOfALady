@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/components.css" />
     <script defer src="assets/js/theme.js"></script>
+    <script defer src="assets/js/blog-list.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -16,7 +17,15 @@
         <nav class="site-nav" aria-label="Main navigation">
           <a class="nav-link" href="index.html">Home</a>
           <a class="nav-link" href="about.html">About Me</a>
-          <a class="nav-link" href="publications.html">Publications</a>
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+              Publications
+            </button>
+            <div class="dropdown-menu" role="menu">
+              <a class="dropdown-item" href="publications-web.html">Web Publications</a>
+              <a class="dropdown-item" href="publications-print.html">Print Publications</a>
+            </div>
+          </div>
           <a class="nav-link active" href="blog.html">Blog</a>
         </nav>
         <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
@@ -34,30 +43,10 @@
         </p>
       </section>
 
-      <section class="post-list" aria-label="Sample blog posts">
+      <section id="blog-post-list" class="post-list" aria-label="Blog posts">
         <article class="post">
-          <h3>Sketchbook Entry: How a Review Starts as a Feeling</h3>
-          <p class="post-meta">January 10, 2026 - 5 min read</p>
-          <p>
-            A short walk through my process: from a highlighted sentence to a full piece, with detours, doodles, and tiny
-            revelations.
-          </p>
-        </article>
-
-        <article class="post">
-          <h3>What I Learned from Writing in Public</h3>
-          <p class="post-meta">February 2, 2026 - 4 min read</p>
-          <p>
-            Notes on confidence, experimentation, and letting imperfect drafts become invitations rather than obstacles.
-          </p>
-        </article>
-
-        <article class="post">
-          <h3>Micro-Review: A Book That Changed My Weekend</h3>
-          <p class="post-meta">March 18, 2026 - 6 min read</p>
-          <p>
-            A playful but close reading of a text that shifted how I think about originality, voice, and creative courage.
-          </p>
+          <h3>Loading posts...</h3>
+          <p class="post-meta">Please wait</p>
         </article>
       </section>
     </main>

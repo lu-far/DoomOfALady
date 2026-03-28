@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/components.css" />
     <script defer src="assets/js/theme.js"></script>
-    <script defer src="assets/js/publication-menu.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -17,7 +16,15 @@
         <nav class="site-nav" aria-label="Main navigation">
           <a class="nav-link" href="index.html">Home</a>
           <a class="nav-link" href="about.html">About Me</a>
-          <a class="nav-link active" href="publications.html">Publications</a>
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle active" type="button" aria-haspopup="true" aria-expanded="false">
+              Publications
+            </button>
+            <div class="dropdown-menu" role="menu">
+              <a class="dropdown-item" href="publications-web.html">Web Publications</a>
+              <a class="dropdown-item active" href="publications-print.html">Print Publications</a>
+            </div>
+          </div>
           <a class="nav-link" href="blog.html">Blog</a>
         </nav>
         <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
@@ -33,15 +40,6 @@
         <p class="page-subtitle">
           Placeholder section for print essays, journals, anthologies, and future offline publications.
         </p>
-
-        <div class="publication-switcher">
-          <label for="publication-type-select">Browse publication type:</label>
-          <select id="publication-type-select" aria-label="Publication type selector">
-            <option value="publications.html">Publication Overview</option>
-            <option value="publications-web.html">Web Publications</option>
-            <option value="publications-print.html" selected>Print Publications</option>
-          </select>
-        </div>
       </section>
 
       <section class="timeline" aria-label="Print publication list placeholder">

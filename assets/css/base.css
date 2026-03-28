@@ -46,6 +46,13 @@ h3 {
 
 p {
   margin-top: 0;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+li {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 img {

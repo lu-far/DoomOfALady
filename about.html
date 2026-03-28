@@ -17,7 +17,15 @@
         <nav class="site-nav" aria-label="Main navigation">
           <a class="nav-link" href="index.html">Home</a>
           <a class="nav-link active" href="about.html">About Me</a>
-          <a class="nav-link" href="publications.html">Publications</a>
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+              Publications
+            </button>
+            <div class="dropdown-menu" role="menu">
+              <a class="dropdown-item" href="publications-web.html">Web Publications</a>
+              <a class="dropdown-item" href="publications-print.html">Print Publications</a>
+            </div>
+          </div>
           <a class="nav-link" href="blog.html">Blog</a>
         </nav>
         <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
@@ -46,7 +54,6 @@
             <figure class="profile-frame">
               <img src="assets/about_me_profile.jpg" alt="Lucy smiling in profile portrait" />
             </figure>
-            <p class="profile-caption">About me portrait</p>
           </div>
         </div>
       </section>
