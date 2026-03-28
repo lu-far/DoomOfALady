@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/components.css" />
     <script defer src="assets/js/theme.js"></script>
+    <script defer src="assets/js/contact.js"></script>
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="index.html">Your Name</a>
+        <a class="brand" href="index.html">Lucy Farcnik</a>
         <nav class="site-nav" aria-label="Main navigation">
           <a class="nav-link" href="index.html">Home</a>
           <a class="nav-link active" href="about.html">About Me</a>
@@ -28,28 +29,60 @@
 
     <main class="container page">
       <section class="hero">
-        <h1 class="page-title">About Me</h1>
-        <p class="page-subtitle">Placeholder: write a short biography with your background, interests, and current goals.</p>
+        <div class="hero-layout">
+          <div>
+            <h1 class="page-title">About Me</h1>
+            <p class="page-subtitle">
+              I am Lucy, a writer and observer who likes to blend thoughtful critique with a playful voice. I care about
+              clarity, craft, and making ideas feel approachable.
+            </p>
+            <div class="badge-row" aria-label="Personal profile tags">
+              <span class="badge">Writer</span>
+              <span class="badge">Reviewer</span>
+              <span class="badge">Creative Thinker</span>
+            </div>
+          </div>
+          <div>
+            <figure class="profile-frame">
+              <img src="assets/about_me_profile.jpg" alt="Lucy smiling in profile portrait" />
+            </figure>
+            <p class="profile-caption">About me portrait</p>
+          </div>
+        </div>
       </section>
 
       <section class="card-grid" aria-label="About details">
         <article class="card">
           <h3>Background</h3>
-          <p>Placeholder: where you studied, trained, or developed your expertise.</p>
+          <p>
+            My work lives between close reading and creative reflection, exploring literature, design, and contemporary
+            internet culture.
+          </p>
         </article>
         <article class="card">
           <h3>Interests</h3>
-          <p>Placeholder: your research themes, technical interests, and broader passions.</p>
+          <p>
+            I am drawn to themes of originality, identity, memory, and language, especially where seriousness meets humor.
+          </p>
         </article>
         <article class="card">
           <h3>Outside Work</h3>
-          <p>Placeholder: hobbies, volunteering, or side projects that matter to you.</p>
+          <p>I collect odd details, annotate books, and turn fleeting observations into pieces that invite conversation.</p>
+          <a
+            class="contact-pill"
+            href="#"
+            data-email-user="lucy.farcnik"
+            data-email-domain="gmail"
+            data-email-tld="com"
+          >
+            Say hello
+          </a>
         </article>
       </section>
     </main>
 
     <footer class="container site-footer">
-      <small>(c) <span id="year">2026</span> Your Name. All rights reserved.</small>
+      <small>(c) <span id="year">2026</span> Lucy Farcnik. All rights reserved.</small>
     </footer>
   </body>
 </html>

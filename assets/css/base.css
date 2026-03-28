@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -9,12 +11,14 @@ body {
 }
 
 body {
-  font-family: var(--font-serif);
+  font-family: var(--font-main);
   color: var(--text);
-  background: radial-gradient(circle at 15% -15%, rgba(156, 175, 136, 0.25), transparent 38%),
-    radial-gradient(circle at 85% 0%, rgba(79, 107, 68, 0.13), transparent 30%),
+  background: radial-gradient(circle at 10% -12%, rgba(156, 175, 136, 0.27), transparent 36%),
+    radial-gradient(circle at 92% 1%, rgba(240, 217, 191, 0.42), transparent 32%),
+    radial-gradient(circle at 78% 120%, rgba(214, 232, 208, 0.55), transparent 36%),
     var(--bg);
-  line-height: 1.6;
+  line-height: 1.7;
+  letter-spacing: 0.2px;
   min-height: 100vh;
   transition: background-color 0.25s ease, color 0.25s ease;
 }
@@ -35,10 +39,16 @@ a {
 h1,
 h2,
 h3 {
-  line-height: 1.2;
+  line-height: 1.15;
+  letter-spacing: 0.35px;
   margin-top: 0;
 }
 
 p {
   margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }

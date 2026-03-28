@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/components.css" />
     <script defer src="assets/js/theme.js"></script>
+    <script defer src="assets/js/contact.js"></script>
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="index.html">Your Name</a>
+        <a class="brand" href="index.html">Lucy Farcnik</a>
         <nav class="site-nav" aria-label="Main navigation">
           <a class="nav-link active" href="index.html">Home</a>
           <a class="nav-link" href="about.html">About Me</a>
@@ -28,31 +29,56 @@
 
     <main class="container page">
       <section class="hero">
-        <h1 class="page-title">Welcome to My Personal Website</h1>
-        <p class="page-subtitle">
-          This is a starter home page with a clean, modern layout and a theme switcher. Replace this text with a brief intro,
-          your current role, and a one-line summary of your work.
-        </p>
+        <div class="hero-layout">
+          <div>
+            <h1 class="page-title">Playful Ideas, Curious Writing, Creative Work</h1>
+            <p class="page-subtitle">
+              Hi, I am Lucy. This space is a bright notebook for reviews, reflections, and experimental stories about art,
+              culture, and the small details that make life feel alive.
+            </p>
+            <div class="badge-row" aria-label="Creative themes">
+              <span class="badge">Playfulness</span>
+              <span class="badge">Creativity</span>
+              <span class="badge">Essays</span>
+              <span class="badge">Cultural Notes</span>
+            </div>
+          </div>
+          <div>
+            <figure class="profile-frame">
+              <img src="assets/main_profile.jpg" alt="Portrait of Lucy" />
+            </figure>
+            <p class="profile-caption">Main portrait</p>
+          </div>
+        </div>
       </section>
 
       <section class="card-grid" aria-label="Quick highlights">
         <article class="card">
-          <h3>Current Focus</h3>
-          <p>Placeholder: add what you are currently researching or building.</p>
+          <h3>Current Spark</h3>
+          <p>I am collecting playful stories from everyday life and shaping them into essays with personality and heart.</p>
         </article>
         <article class="card">
-          <h3>Recent News</h3>
-          <p>Placeholder: add a recent milestone, award, or publication update.</p>
+          <h3>Creative Rhythm</h3>
+          <p>New notes are brewing on books, design, memory, and strange beautiful moments that deserve a spotlight.</p>
         </article>
         <article class="card">
           <h3>Contact</h3>
-          <p>Placeholder: add email, social links, or a preferred contact method.</p>
+          <p>Want to collaborate, commission, or share a thought?</p>
+          <a
+            class="contact-pill"
+            href="#"
+            data-email-user="lucy.farcnik"
+            data-email-domain="gmail"
+            data-email-tld="com"
+          >
+            Email Lucy
+          </a>
         </article>
       </section>
     </main>
 
     <footer class="container site-footer">
-      <small>(c) <span id="year">2026</span> Your Name. All rights reserved.</small>
+      <small>(c) <span id="year">2026</span> Lucy Farcnik. All rights reserved.</small>
     </footer>
   </body>
 </html>
