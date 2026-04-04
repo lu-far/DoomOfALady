@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 BLOG_DIR = ROOT / "blogs"
 OUTPUT = BLOG_DIR / "posts.json"
 
-META_PATTERN = re.compile(r'<meta\\s+name="(?P<name>[^\"]+)"\\s+content="(?P<value>[^\"]*)"\\s*/?>', re.IGNORECASE)
+META_PATTERN = re.compile(r'<meta\s+name="(?P<name>[^"]+)"\s+content="(?P<value>[^"]*)"\s*/?>', re.IGNORECASE)
 
 
 def parse_meta(html_text: str) -> dict[str, str]:
